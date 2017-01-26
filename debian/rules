@@ -151,11 +151,11 @@ ifeq (,$(filter $(distrelease),lenny etch squeeze wheezy lucid maverick natty on
   bd_dpkgdev = dpkg-dev,
 endif
 
-CC=$(DEB_HOST_GNU_TYPE)-gcc
-CXX=$(DEB_HOST_GNU_TYPE)-g++
+CC=gcc
+CXX=g++
 
-AR=$(DEB_HOST_GNU_TYPE)-ar
-RANLIB=$(DEB_HOST_GNU_TYPE)-ranlib
+AR=ar
+RANLIB=ranlib
 
 DPKG_CPPFLAGS:= $(shell dpkg-buildflags --get CPPFLAGS)
 DPKG_CFLAGS  = $(shell DEB_BUILD_MAINT_OPTIONS=hardening=-pie dpkg-buildflags --get CFLAGS)
@@ -211,8 +211,8 @@ ifeq ($(with_lto),yes)
       LTO_CFLAGS += -ffat-lto-objects
     endif
     EXTRA_OPT_CFLAGS += $(LTO_CFLAGS)
-    AR=$(DEB_HOST_GNU_TYPE)-gcc-ar
-    RANLIB=$(DEB_HOST_GNU_TYPE)-gcc-ranlib
+    AR=gcc-ar
+    RANLIB=gcc-ranlib
 endif
 
 make_build_target = $(if $(with_pgo),profile-opt)
@@ -1389,7 +1389,7 @@ ifneq ($(with_gdbm),yes)
 endif
 
 	find $(d_ldbg) $(d_ldev) -name '*.a' ! -type l \
-		| xargs -n 1 $(DEB_HOST_GNU_TYPE)-objcopy -p --remove-section=.gnu.lto_.*
+		| xargs -n 1 objcopy -p --remove-section=.gnu.lto_.*
 	dh_strip -a -N$(p_dbg) -N$(p_ldbg) -Xdebug -Xdbg --dbg-package=$(p_dbg)
 	mkdir -p $(d_dbg)/usr/share/gdb/auto-load/usr/bin
 	cp Tools/gdb/libpython.py $(d_dbg)/usr/share/gdb/auto-load/usr/bin/$(PVER)m-gdb.py
