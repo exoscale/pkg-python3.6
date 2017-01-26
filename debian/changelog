@@ -5,6 +5,7 @@ python3.6 (3.6.0-1~precise0+exo1) precise; urgency=medium
     + Use built-in libmpdec library.
     + Disable tentative of cross-compilation support.
     + Compile debug interpreter with -O0.
+    + Remove documentation package.
 
  -- Vincent Bernat <bernat@debian.org>  Thu, 26 Jan 2017 14:20:37 +0100
 
