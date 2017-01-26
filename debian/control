@@ -9,12 +9,12 @@ Build-Depends: debhelper (>= 9), dpkg-dev,
   zlib1g-dev, libbz2-dev, liblzma-dev,
   libgdbm-dev, libdb-dev,
   tk-dev, blt-dev (>= 2.4z), libssl-dev,
-  libexpat1-dev, libmpdec-dev (>= 2.4),
+  libexpat1-dev,
   libbluetooth-dev [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64],
   locales [!armel !avr32 !hppa !ia64 !mipsel],
   libsqlite3-dev, libffi-dev (>= 3.0.5) [!or1k !avr32],
   libgpm2 [!hurd-i386 !kfreebsd-i386 !kfreebsd-amd64],
-  mime-support, netbase, bzip2, time, python3:any,
+  mime-support, netbase, bzip2, time, python3,
   net-tools, xvfb, xauth
 Build-Depends-Indep: python3-sphinx
 Standards-Version: 3.9.8
