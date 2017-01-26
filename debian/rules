@@ -161,7 +161,7 @@ DPKG_CPPFLAGS:= $(shell dpkg-buildflags --get CPPFLAGS)
 DPKG_CFLAGS  = $(shell DEB_BUILD_MAINT_OPTIONS=hardening=-pie dpkg-buildflags --get CFLAGS)
 DPKG_LDFLAGS := $(shell DEB_BUILD_MAINT_OPTIONS=hardening=-pie dpkg-buildflags --get LDFLAGS)
 OPT_CFLAGS   := $(filter-out -O%,$(DPKG_CFLAGS)) # default is -O3
-DEBUG_CFLAGS := $(patsubst -O%,-Og,$(DPKG_CFLAGS))
+DEBUG_CFLAGS := $(patsubst -O%,-O0,$(DPKG_CFLAGS))
 
 $(warning XXXXX CFLAGS: $(DPKG_CFLAGS))
 $(warning XXXXX LDFLAGS: $(DPKG_LDFLAGS))
