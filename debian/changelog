@@ -1,6 +1,7 @@
 python3.6 (3.6.0-1~precise0+exo1) precise; urgency=medium
 
   * Backport to Precise.
+    + Relax dependency of dpkg-dev (not documented why).
 
  -- Vincent Bernat <bernat@debian.org>  Thu, 26 Jan 2017 14:20:37 +0100
 
