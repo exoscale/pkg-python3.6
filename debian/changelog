@@ -1,3 +1,10 @@
+python3.6 (3.6.0-1~precise0+exo2) precise; urgency=medium
+
+  * More backport for Precise.
+    + Ship wheels for ensurepip.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 27 Jan 2017 09:50:41 +0100
+
 python3.6 (3.6.0-1~precise0+exo1) precise; urgency=medium
 
   * Backport to Precise.
