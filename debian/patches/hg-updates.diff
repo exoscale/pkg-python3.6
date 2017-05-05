@@ -1,4 +1,4 @@
-# DP: updates from the 3.6 branch (until 2016-09-10, ).
+# DP: updates from the 3.6 branch (until 2017-02-03, ).
 
-# hg diff -r v3.6.0a4 | filterdiff --exclude=.hgignore --exclude=.hgeol --exclude=.hgtags --remove-timestamps
+# hg diff -r v3.6.0 | filterdiff --exclude=.hgignore --exclude=.hgeol --exclude=.hgtags --remove-timestamps
 
