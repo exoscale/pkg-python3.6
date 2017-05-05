@@ -1,3 +1,9 @@
+python3.6 (3.6.1-1~xenial0+exo1) xenial; urgency=medium
+
+  * Backport to Xenial.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 05 May 2017 14:26:45 +0200
+
 python3.6 (3.6.1-1) unstable; urgency=medium
 
   * Python 3.6.1 release.
