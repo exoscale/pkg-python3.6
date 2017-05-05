@@ -1,3 +1,9 @@
+python3.6 (3.6.1-1~precise0+exo1) precise; urgency=medium
+
+  * Backport to Precise.
+
+ -- Vincent Bernat <bernat@debian.org>  Fri, 05 May 2017 15:32:41 +0200
+
 python3.6 (3.6.1-1) unstable; urgency=medium
 
   * Python 3.6.1 release.
